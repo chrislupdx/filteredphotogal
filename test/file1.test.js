@@ -1,19 +1,7 @@
 const test = QUnit.test; 
 QUnit.module('DOMcontentTest');
+import cardTemplateConstructor from '../src/cardTemplateConstructor.js';
 
-function cardTemplateConstructor(cardfields) {
-    const template = document.createElement('template');
-    const html = `<li id = "photocard">
-    <p>
-        ${cardfields.title}
-    </p>
-    <img src= ${cardfields.url} >
-    </li>`;
-    template.innerHTML = html;
-    const dom = template.content;
-    return dom;
-
-}
 
 test('DOMcontentTest', function(assert){
 //arrange
