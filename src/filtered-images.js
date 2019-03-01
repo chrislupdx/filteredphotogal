@@ -3,4 +3,4 @@ export default function filteredImages(images, filter) {
         const keyword = image.keyword === filter.keyword;
         return keyword;
     });
-};
+}
