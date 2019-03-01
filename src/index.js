@@ -4,7 +4,6 @@ import cardTemplateConstructor from './cardTemplateConstructor.js';
 //render card to UL
 
 const photoGalUl = document.getElementById('photogallery');
-console.log(photoGalUl);
 
 //use forEach to go through the images, render to UL as Li components
 images.forEach(function(image) {

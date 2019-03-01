@@ -2,7 +2,6 @@ const test = QUnit.test;
 QUnit.module('DOMcontentTest');
 import cardTemplateConstructor from '../src/cardTemplateConstructor.js';
 
-
 test('DOMcontentTest', function(assert){
 //arrange
     const fields = {
