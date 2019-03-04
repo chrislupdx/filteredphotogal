@@ -1,6 +1,7 @@
 const test = QUnit.test; 
 QUnit.module('Filtertest');
 import filteredImages from '../src/filtered-images.js';
+import inputToFilterParams from '../src/inputToFilterParams.js';
 
 test('keyword filter test /whether i can filter objects out', function(assert){
 //arrange
@@ -21,7 +22,7 @@ test('keyword filter test /whether i can filter objects out', function(assert){
         }
     ];
 
-    const result = filteredImages(images, filter);
+    const result = inputToFilterParams(images, filter);
    
 //act
 

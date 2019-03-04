@@ -9,5 +9,4 @@ export default function cardTemplateConstructor(cardfields) {
     template.innerHTML = html;
     const dom = template.content;
     return dom;
-
 }

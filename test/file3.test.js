@@ -1,4 +1,6 @@
 import hornFilteredImages from '../src/hornFilteredImages.js';
+import inputToFilterParams from '../src/inputToFilterParams.js';
+
 const test = QUnit.test; 
 QUnit.module('hornFiltertest');
 
@@ -17,7 +19,7 @@ test('horn filter test /whether I can filter objects out', function(assert){
         }
     ];
 
-    const result = hornFilteredImages(images, filter2);
+    const result = inputToFilterParams(images, filter2);
     //act
     //assert
     assert.deepEqual(filtered2, result);
